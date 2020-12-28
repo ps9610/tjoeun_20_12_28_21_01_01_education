@@ -7,11 +7,33 @@
 #wrap .flex-container .flex-item {width:25%;display:flex;flex:1 1 auto;padding:8px;box-sizing:border-box;/* flex-grow:1;flex-shrink:1;flex-basis:auto;를 다 합쳐놓은 것 👉 */}
                                          /* flex:1 1 auto : 가로방향으로 늘려서 쓰겠다. | item속성 */
                                          /* flex:0 0 auto : 가로방향으로 늘어나지 않음. */
-#wrap .flex-container .flex-item div/* gap 역할 */ {flex:1 1 auto;display:flex;background:#99c;height:100%;} /* 우리꺼는 지금 1600px이 창 넓이 | 1600/100 = 16ㅔㅌ = 1vw; */
+#wrap .flex-container .flex-item div/* gap 역할 */ {flex:1 1 auto;display:flex;justify-content:center;align-items:center;} 
+/* justify-content:center; 수평정렬, 가운데 | align-items:center; 수직정렬, 가운데 */
+/* 마진으로 가운데정렬 시 높이가 반드시 필요하지만  flexbox는 없어도 정렬됨 */
+
+#wrap .flex-container .flex-item div span {display:block;font-size:3.75vw;}
+/* 우리꺼는 지금 1600px이 창 넓이 | 1600/100 = 16px = 1vw; 우리 현재 폰트 60px => 현재폰트 60px / 전체창너비 1600px * 백분율 100 = 3.75vw */
 /* viewport width(윈도우의 창넓이 1903px / 100) = 1vw | viewport height(윈도우의 창높이 969px / 100) = 1vh */
 /* margin-left:auto; = 우측정렬 | margin-right:auto; = 좌측정렬 | margin-top:auto; = 아래쪽정렬 | margin-bottom:auto; = 위쪽정렬 */
-#wrap .flex-container .flex-item div span {display:block;margin:auto;font-size:3.75vw;background:#c89;}
 #wrap .flex-container .flex-item div img {width:100%;}
+#wrap .flex-container .flex-item:nth-child(11) {order:1;}
+#wrap .flex-container .flex-item:nth-child(10) {order:2;}
+#wrap .flex-container .flex-item:nth-child(9)  {order:3;}
+#wrap .flex-container .flex-item:nth-child(16) {order:18;}
+#wrap .flex-container .flex-item:nth-child(15) {order:17;}
+#wrap .flex-container .flex-item:nth-child(14) {order:16;}
+#wrap .flex-container .flex-item:nth-child(13) {order:15;}
+#wrap .flex-container .flex-item:nth-child(12) {order:14;}
+#wrap .flex-container .flex-item:nth-child(11) {order:13;}
+#wrap .flex-container .flex-item:nth-child(10) {order:12;}
+#wrap .flex-container .flex-item:nth-child(8)  {order:11;}
+#wrap .flex-container .flex-item:nth-child(7)  {order:10;}
+#wrap .flex-container .flex-item:nth-child(6)  {order:9;}
+#wrap .flex-container .flex-item:nth-child(5)  {order:8;}
+#wrap .flex-container .flex-item:nth-child(4)  {order:7;}
+#wrap .flex-container .flex-item:nth-child(3)  {order:6;}
+#wrap .flex-container .flex-item:nth-child(2)  {order:5;}
+#wrap .flex-container .flex-item:nth-child(1)  {order:4;}
 
 /* 
 //////flex//////
