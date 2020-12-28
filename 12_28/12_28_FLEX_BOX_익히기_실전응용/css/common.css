@@ -33,4 +33,4 @@ img {vertical-align:middle;}
 #skip > li > a:focus {line-height:60px;font-size:20px;}
 
 /* wrap */
-#wrap {z-index:1;position:relative;width:100%;overflow:hidden;/* 다른 섹션의 고정넓이를 숨겨준다. */}
+#wrap {z-index:1;position:relative;width:100%;/* 다른 섹션의 고정넓이를 숨겨준다. */}
