@@ -56,22 +56,28 @@
 </head>
 <body>
     <div id="wrap">
-
-        <div id="timer">
-            <div class="wrap">
-                <div class="container">
-                    <div class="timer-bg"></div> <!-- 타이머 배경 -->
-                    <div class="timer-wrap"> <!-- 타이머 -->
-                        <span class="timer1"><img src="./img/main_visual_timer.png" alt=""></span>
-                        <span class="timer2"><img src="./img/main_visual_timer_first.png" alt=""></span>
-                        <span class="timer3"><img src="./img/main_visual_timer_second.png" alt=""></span>
-                        <span class="timer4"><img src="./img/main_visual_timer_second2.png" alt=""></span>
-                        <span class="timer5"><img src="./img/main_visual_timer_dot.png" alt=""></span>
-                    </div>
-                </div>
-            </div>
+        <div class="bg-wrap"></div>
+        <ul class="clock-wrap">
+            <li class="clock"><img src="./img/main_visual_timer.png" alt=""></li>
+            <li class="hours"><img src="./img/main_visual_timer_first.png" alt=""></li>
+            <li class="minutes"><img src="./img/main_visual_timer_second.png" alt=""></li>
+            <li class="seconds"><img src="./img/main_visual_timer_second2.png" alt=""></li>
+            <li class="center"><img src="./img/main_visual_timer_dot.png" alt=""></li>
+        </ul>
+        <div class="digital-wrap">
+            <ul class="digital">
+                <li class="year">0000.&nbsp;</li>
+                <li class="mon">00.&nbsp;</li>
+                <li class="date">00&nbsp;</li>
+                <li class="day">화요일</li>
+            </ul>
+            <ul class="digital">
+                <li class="hour">00 :</li>
+                <li class="minute">&nbsp;00 :</li>
+                <li class="second">&nbsp;00</li>
+            </ul>
         </div>
-    <script src="./js/analogTimer.js"></script>
     </div>
+    <script src="./js/analogTimer.js"></script>
 </body>
 </html>
