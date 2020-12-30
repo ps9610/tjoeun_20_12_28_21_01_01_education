@@ -1,21 +1,28 @@
 ;(function($,document,window,undefined){
-    
-    //삼각함수 COS() SIN() PI() 응용한 Radian값 구하기
-        //삼각함수 이용해서 원 호를 돌아가는 사각형을 만드는 알고리즘
-    
-    var radX = 0; //left
-    var radY = 0; //top
-    var r = 250; //반지름
-    var deg = 0; //각도 0~  359 (0 = 360 때문에 마지막은 359도)
+    var x1 = 0;
+    var y1 = 0;
+    var r1 = 250;
 
+    var x2 = 0;
+    var y2 = 0;
+    var r2 = 400;
+
+    var deg = 0;
+
+    
     function radianFn(){
         deg++;
-        radX = Math.cos( deg*(Math.PI/180) )*r+r;
-        radY = Math.sin( deg*(Math.PI/180) )*r+r;
-        //회전하는 주체를 써주면 됨
-        $(".circle .rect").css({ left:radX, top:radY });
+        
+        x1 = Math.cos( deg*(Math.PI/180) )*r1+r1;
+        y1 = Math.sin( deg*(Math.PI/180) )*r1+r1;
+        $(".mini-cir").css({ left:x1, top:y1 });
+
+        x2 = Math.cos( deg*(Math.PI/180) )*r2+r2;
+        y2 = Math.sin( deg*(Math.PI/180) )*r2+r2;
+        $(".rec").css({ left:x2, top:y2 });
     }
-    setTimeout(  radianFn,1 );
-    setInterval( radianFn,20 );
+
+    setTimeout(radianFn,1);
+    setInterval(radianFn,10);
 
 })(jQuery,document,window);

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+#wrap {width:100%;height:100%;display:flex;}
+#wrap .circle {position:relative;width:500px;height:500px;border:1px solid #888;margin:auto;border-radius:50%;}
+#wrap .circle .rect {position:absolute;margin-top:-35px;top:250px;margin-left:-35px;left:500px;display:block;width:70px;height:70px;border:1px solid #ee9900;}
+
+
+
+
+/* 직접써서 테스트해보기 */
+
+/* 0도 */
+/* 90도 */
+/* #wrap .circle .rect {position:absolute;margin-top:-35px;top:500px;margin-left:-35px;left:250px;display:block;width:70px;height:70px;border:1px solid #ee9900;} */
+/* top:250px = Y축; left:500px = X축; */
+/* 180도 */
+/* #wrap .circle .rect {position:absolute;margin-top:-35px;top:250px;margin-left:-35px;left:0;display:block;width:70px;height:70px;border:1px solid #ee9900;} */
+/* 270도 */
+/* #wrap .circle .rect {position:absolute;margin-top:-35px;top:250px;margin-left:-35px;left:500px;display:block;width:70px;height:70px;border:1px solid #ee9900;} */
+
+/* 사이각 구하기 */
+/* 30도 */
+/* #wrap .circle .rect {position:absolute;margin-top:-35px;top:375px;margin-left:-35px;left:466.5063509px;display:block;width:70px;height:70px;border:1px solid #ee9900;} */
+/* 120도 */
+/* #wrap .circle .rect {position:absolute;margin-top:-35px;top:125px;margin-left:-35px;left:466.5063509px;display:block;width:70px;height:70px;border:1px solid #ee9900;} */
+/* 각도법:각도를 변경하여 물체를 이동시킴(1-360도까지이동) | 라디앙법 | 호도법 */
