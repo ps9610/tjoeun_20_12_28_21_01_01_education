@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+#wrap {width:100%;height:100%;}
+
+#wrap #timer {width:100%;height:100%;background:url(../img/main_visual_bg.jpg) no-repeat 0 0;background-size:cover;}
+#wrap #timer .wrap {width:100%;height:100%;}
+#wrap #timer .wrap .container {width:100%;height:100%;}
+
+/* 타이머 배경 */
+#wrap #timer .wrap .container .timer-bg {z-index:1;position:absolute;top:0;left:0;width:100%;height:100%;background:url(../img/main_visual.jpg) no-repeat 50% 0;background-size:auto 100%;}
+
+/* 타이머 */
+#wrap #timer .wrap .container .timer-wrap {z-index:2;position:relative;width:100%;max-width:490px;margin:0 auto;}
+#wrap #timer .wrap .container .timer-wrap > span {position:absolute;top:0;left:0;display:block;width:100%;}
+#wrap #timer .wrap .container .timer-wrap .timer1 {z-index:1;position:relative;}
+#wrap #timer .wrap .container .timer-wrap .timer2 {z-index:2;transform:rotate(342.5deg);} /* 시침 11시(12시각제 각도 360도) | 11시(330도)+25분(25*0.5) = 342.5 */
+#wrap #timer .wrap .container .timer-wrap .timer3 {z-index:3;transform:rotate(150deg);} /* 분침(60분 각도 360도) 25분 */
+#wrap #timer .wrap .container .timer-wrap .timer4 {z-index:4;transform:rotate(180deg);} /* 초침(60초 각도 360도) 30초 */
+#wrap #timer .wrap .container .timer-wrap .timer5 {z-index:5;}/* 시분초침 위의 캡 */
+#wrap #timer .wrap .container .timer-wrap > span > img {width:100%;}
+

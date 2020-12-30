@@ -1,0 +1,8 @@
+@media all and (max-width:1000px){
+    #wrap #timer .wrap .container .timer-bg {background-size:100% auto;}
+    #wrap #timer .wrap .container .timer-wrap {width:49%;}
+}
+
+@media all and (min-width:1000px) and (max-height:1080px) {
+    #wrap #timer .wrap .container .timer-bg {background-size:auto 1080px;}
+}
