@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <title>삼각함수 원주율</title>
+    <title>삼각함수와 원주율 각도를 응용하여 둥근 원테두리를 회전하는 슬라이드 애니메이션</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=Emulate10"> -->
     <meta name="Viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0. maximum-scale=1.6, user-scalable=no"> <!-- input창 입력 시 확대되는거 막아줌 -->
     <!-- initial-scale=1.0 :초기값 minimum-scale=1.0:본래 사이즈보다 줄이지 못하게, maximum-scale=1.6: 본래크기보다 1.6배만 크게, user-scalable=no:폼 요소 선택(포커스) 시 확대 현상을 제거 (사용자가 손가락으로 확대못하게함) -->
-    <meta name="Title" content="삼각함수 원주율">
+    <meta name="Title" content="삼각함수와 원주율 각도를 응용하여 둥근 원테두리를 회전하는 슬라이드 애니메이션">
     <meta name="Publisher" content="프론트엔드 박소혜">
     <meta name="Author-date" content="2020-12-30"> 
-    <meta name="Author" content="삼각함수 원주율">
-    <meta name="Copyright" content="삼각함수 원주율">
-    <meta name="Keywords" content="삼각함수 원주율">
-    <meta name="description" content="삼각함수 원주율"> 
+    <meta name="Author" content="삼각함수와 원주율 각도를 응용하여 둥근 원테두리를 회전하는 슬라이드 애니메이션">
+    <meta name="Copyright" content="삼각함수와 원주율 각도를 응용하여 둥근 원테두리를 회전하는 슬라이드 애니메이션">
+    <meta name="Keywords" content="삼각함수와 원주율 각도를 응용하여 둥근 원테두리를 회전하는 슬라이드 애니메이션">
+    <meta name="description" content="삼각함수와 원주율 각도를 응용하여 둥근 원테두리를 회전하는 슬라이드 애니메이션"> 
     <meta name="Robots" content="index, follow">
 
     <!-- 파비콘 -->
@@ -56,14 +56,30 @@
 </head>
 <body>
     <div id="wrap"> 
-        <!-- 동그라미 안에 사각형 먼저 만들어줌 
-            원 둘레를 따라서 회전하는 사각형을 만들어줄거임-->
 
-        <div class="circle">
-            <span class="rect"></span>
+        <div class="slide-container">
+            <span class="slide slide1"></span>
+            <span class="slide slide2"></span>
+            <span class="slide slide3"></span>
+            <span class="slide slide4"></span>
+            <span class="slide slide5"></span>
+            <span class="slide slide6"></span>
+            <span class="slide slide7"></span>
+            <span class="slide slide8"></span>
+            <span class="slide slide9"></span>
+            <span class="slide slide10"></span>
+            <span class="slide slide11"></span>
+            <span class="slide slide12"></span>
         </div>
-
+        <div class="button-wrap">
+            <span>
+                <a href="#" class="prevBtn">Prev</a>
+            </span>
+            <span>
+                <a href="#" class="nextBtn">Next</a>
+            </span>
+        </div>
     </div>
-    <script src="./js/radian.js"></script>
+    <script src="./js/radianSlide.js"></script>
 </body>
 </html>
