@@ -6,6 +6,8 @@
     var r = $(".slide-container").innerWidth()/2;
     var angle = 360/n; //30
     var deg = []; //degree 12개 각각 30도씩 증가 0 30 ...... 330 12개 배치
+    var setId = 0;
+
     //1. 각도넣기 for문으로
     function positionFn(){
         for( var i=0;i<n;i++ ){
@@ -26,7 +28,11 @@
             $(".slide").eq(i).animate({ left:x, top:y });
         }
     }
-    //setInterval(slideMainFn,1000);
+    
+    setTimeout(autoPlayFn,100);
+    function autoPlayFn(){
+        setId = setInterval(nextFn,2000);
+    }
 
     function nextFn(){
         for(var i=0;i<n;i++){
@@ -44,26 +50,40 @@
 
     // 클릭이벤트 / 어러가지 이벤트핸들러 나열방법
     $(".nextBtn")
-    .on("click", function(){
-        nextFn();
-    })
-    .on("dbclick", function(){
-        nextFn();
-    })
-    .on("focus", function(){
-        nextFn();
-    });
+        .on("click", function(){
+            nextFn();
+        })
+        .on("mouseenter", function(){
+            clearInterval(setId);
+        })
+        .on("mouseleave", function(){
+            clearInterval(setId);
+            autoPlayFn();
+        })
+        .on("dbclick", function(){
+            nextFn();
+        })
+        .on("focus", function(){
+            nextFn();
+        });
 
     $(".prevBtn")
-    .on("click", function(){
-        prevFn();
-    })
-    .on("dbclick", function(){
-        prevFn();
-    })
-    .on("focus", function(){
-        prevFn();
-    });
+        .on("click", function(){
+            prevFn();
+        })
+        .on("mouseenter", function(){
+            clearInterval(setId);
+        })
+        .on("mouseleave", function(){
+            clearInterval(setId);
+            autoPlayFn();
+        })
+        .on("dbclick", function(){
+            prevFn();
+        })
+        .on("focus", function(){
+            prevFn();
+        });
 
     $(".slide").each(function(idx){
         $(this).on("click", function(e){
